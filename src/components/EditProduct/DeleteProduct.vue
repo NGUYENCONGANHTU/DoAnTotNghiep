@@ -45,7 +45,10 @@
             aria-label="Close"
           ></button>
         </div>
-        <div class="modal-body">Bạn chắc chắn xóa sản phẩm này chứ ?</div>
+        <div class="modal-body">
+          Bạn chắc chắn xóa sản phẩm này chứ ? {{ props.data }}
+        </div>
+
         <div class="modal-footer">
           <button
             type="button"
@@ -60,3 +63,23 @@
     </div>
   </div>
 </template>
+<script setup>
+import { doc, deleteDoc } from "firebase/firestore";
+import { onMounted, ref } from "vue";
+const props = defineProps({
+  data: { type: Array },
+});
+
+const emits = defineEmits(["deleteProduct"]);
+
+emits("deleteProduct", props.id);
+
+const idRef = ref();
+
+onMounted(() => {
+  idRef.value = props.id;
+});
+console.log(props.id);
+
+// await deleteDoc(doc(db, "products", "DC"));
+</script>
