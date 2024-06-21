@@ -6,14 +6,17 @@ import PhonePopularVue from "@/components/PageLayout/PhonePopular.vue";
 import OnSale from "@/components/PageLayout/OnSale.vue";
 import Footer from "@/components/PageLayout/Footer.vue";
 import LayoutHeader from "@/Layout/LayoutHeader.vue";
+import { useLocalStorage } from "@vueuse/core";
+const userInfo = useLocalStorage("users");
 </script>
 <template>
-  <layout-header>
-    <Banner />
-    <BrandPopularVue />
-    <PhonePopularVue />
-    <OnSale />
-    <Footer></Footer>
-  </layout-header>
+    {{ userInfo }}
+    <!-- <layout-header>
+        <Banner />
+        <BrandPopularVue />
+        <PhonePopularVue />
+        <OnSale />
+        <Footer></Footer>
+    </layout-header> -->
 </template>
 <style scoped></style>
