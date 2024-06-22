@@ -5,6 +5,7 @@ import MenuHeader from "@/components/PageLayout/MenuHeader.vue";
 import PhonePopularVue from "@/components/PageLayout/PhonePopular.vue";
 import OnSale from "@/components/PageLayout/OnSale.vue";
 import Footer from "@/components/PageLayout/Footer.vue";
+// <<<<<<< HEAD
 </script>
 <template>
   <menu-header />
@@ -13,5 +14,20 @@ import Footer from "@/components/PageLayout/Footer.vue";
   <PhonePopularVue />
   <OnSale />
   <Footer></Footer>
+<!-- ======= -->
+import LayoutHeader from "@/Layout/LayoutHeader.vue";
+import { useLocalStorage } from "@vueuse/core";
+const userInfo = useLocalStorage("users");
+</script>
+<template>
+    {{ userInfo }}
+    <!-- <layout-header>
+        <Banner />
+        <BrandPopularVue />
+        <PhonePopularVue />
+        <OnSale />
+        <Footer></Footer>
+    </layout-header> -->
+>>>>>>> 796ddba909fbca4f1133e6137a2bc8ce42928c81
 </template>
 <style scoped></style>
