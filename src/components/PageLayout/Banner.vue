@@ -1,49 +1,46 @@
 <template>
-  <div class="container-fluid">
-    <div class="container d-flex">
-      <div class="produce text-white">
-        <h2 class="titleText">IPHONE 14 PROMAX</h2>
-        <p class="">
-          What lies beyond a traditional smartphone? Let's find out. This is
-          iPhone 14 Pro.
-        </p>
-        <button class="btn btn-danger text-center border-1">View More</button>
+  <div
+    id="carouselExampleAutoplaying"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <BannerIphone />
       </div>
-      <div class="produce-image">
-        <img :src="Iphone" alt="" />
+      <div class="carousel-item">
+        <BannerSamSung />
+      </div>
+      <div class="carousel-item">
+        <banner-xiaomi />
+      </div>
+      <div class="carousel-item">
+        <banner-oppo />
       </div>
     </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 </template>
 <script setup>
-import Iphone from "@/assets/SlideImage/Iphone.png";
+import BannerIphone from "../PageLayout/BannerIphone.vue";
+import BannerSamSung from "../PageLayout/BannerSamSung.vue";
+import BannerXiaomi from "../PageLayout/BannerXiaomi.vue";
+import BannerOppo from "../PageLayout/BannerOppo.vue";
 </script>
-<style scoped>
-.container-fluid {
-  margin-top: 10px;
-  border: 1px solid;
-  background-image: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSeo6kejU9KhUFqZNVpnlXPwm7HCTsyGLmzU4TXblgQ86Oid8_p");
-  height: 600px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  width: 100%;
-}
-.produce-image {
-  position: absolute;
-  right: 160px;
-}
-.produce-image img {
-  height: 599px;
-}
-.produce {
-  position: absolute;
-  top: 240px;
-}
-.produce .titleText {
-  font-size: 72px;
-}
-.produce p {
-  font-size: 20px;
-}
-</style>

@@ -11,13 +11,13 @@ import "@/assets/main.css";
       </div>
       <ul class="nav nav-pills mt-1">
         <li class="nav-item">
-          <router-link class="nav-link" to="/home">Home </router-link>
+          <router-link class="nav-link" to="/">Home </router-link>
         </li>
         <li class="nav-item">
           <router-link class="nav-link" to="/about">About </router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/product">Product </router-link>
+          <router-link class="nav-link" to="/ListProduct">Product </router-link>
         </li>
         <li class="nav-item">
           <router-link class="nav-link" to="/hotline">Hotline </router-link>
@@ -81,6 +81,9 @@ input {
   outline: none;
 }
 .router-link-active {
-  background-color: #864f4f;
+  border-bottom: 3px solid #eb626c;
+}
+.nav-pills .nav-link {
+  border-radius: 0;
 }
 </style>

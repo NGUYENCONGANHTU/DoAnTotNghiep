@@ -5,7 +5,11 @@ import Dashboard from "../views/Dashboard.vue";
 import Product from "../views/Product.vue";
 import OrderAdmin from "../views/OrderAdmin.vue";
 import MenuHeader from "@/components/PageLayout/MenuHeader.vue";
+import BannerIphone from "@/components/PageLayout/BannerIphone.vue";
 import Banner from "@/components/PageLayout/Banner.vue";
+import BannerSamSung from "@/components/PageLayout/BannerSamSung.vue";
+import BannerXiaomi from "@/components/PageLayout/BannerXiaomi.vue";
+import BannerOppo from "@/components/PageLayout/BannerOppo.vue";
 import BrandPopular from "@/components/PageLayout/BrandPopular.vue";
 import PhonePopular from "@/components/PageLayout/PhonePopular.vue";
 import OnSale from "@/components/PageLayout/OnSale.vue";
@@ -19,6 +23,8 @@ import FixProduct from "@/components/EditProduct/FixProduct.vue";
 import FixCustomer from "@/components/EditCustomer/FixCustomer.vue";
 import PlusProduct from "@/components/EditProduct/PlusProduct.vue";
 import PlusCustomer from "@/components/EditCustomer/PlusCustomer.vue";
+import ListProduct from "@/components/ProductDetail/ListProduct.vue";
+import CrollBrand from "@/components/ProductDetail/CrollBrand.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -38,10 +44,31 @@ const router = createRouter({
       component: MenuHeader,
     },
     {
-      path: "/banner",
-      name: "banner",
+      path: "/Banner",
+      name: "Banner",
       component: Banner,
     },
+    {
+      path: "/BannerIphone",
+      name: "BannerIphone",
+      component: BannerIphone,
+    },
+    {
+      path: "/BannerSamSung",
+      name: "BannerSamSung",
+      component: BannerSamSung,
+    },
+    {
+      path: "/BannerXiaomi",
+      name: "BannerXiaomi",
+      component: BannerXiaomi,
+    },
+    {
+      path: "/BannerOppo",
+      name: "BannerOppo",
+      component: BannerOppo,
+    },
+
     {
       path: "/brandpopular",
       name: "brandpopular",
@@ -63,7 +90,7 @@ const router = createRouter({
       component: Footer,
     },
     {
-      path: "/home",
+      path: "/",
       name: "home",
       component: Home,
     },
@@ -121,6 +148,17 @@ const router = createRouter({
       path: "/FixCustomer",
       name: "FixCustomer",
       component: FixCustomer,
+    },
+
+    {
+      path: "/ListProduct",
+      name: "ListProduct",
+      component: ListProduct,
+    },
+    {
+      path: "/CrollBrand",
+      name: "CrollBrand",
+      component: CrollBrand,
     },
   ],
 });
