@@ -17,7 +17,6 @@ import Footer from "@/components/PageLayout/Footer.vue";
 import Home from "../views/Home.vue";
 import Sidebar2 from "@/components/Admin/Sidebar2.vue";
 import Customer from "../views/Customer.vue";
-// <<<<<<< HEAD
 import DeleteProduct from "@/components/EditProduct/DeleteProduct.vue";
 import DeleteCustomer from "@/components/EditCustomer/DeleteCustomer.vue";
 import FixProduct from "@/components/EditProduct/FixProduct.vue";
@@ -206,11 +205,7 @@ const router = createRouter({
       name: "footer",
       component: Footer,
     },
-    {
-      path: "/home",
-      name: "home",
-      component: Home,
-    },
+
     {
       path: "/signup",
       name: "signup",
