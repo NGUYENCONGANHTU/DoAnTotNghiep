@@ -9,12 +9,11 @@ import { useLocalStorage } from "@vueuse/core";
 const userInfo = useLocalStorage("users");
 </script>
 <template>
-  <menu-header />
-  <Banner />
-  <BrandPopularVue />
-  <PhonePopularVue />
-  <OnSale />
-  <Footer></Footer>
-  {{ userInfo }}
+    <menu-header />
+    <Banner />
+    <BrandPopularVue />
+    <PhonePopularVue />
+    <OnSale />
+    <Footer></Footer>
 </template>
 <style scoped></style>
