@@ -3,7 +3,6 @@
     <MenuHeader />
     <Banner />
     <CrollBrand />
-
     <div class="container">
       <div class="renderList"><h3>DANH SÁCH SẢN PHẨM</h3></div>
       <div class="row d-flex justify-content-center">
@@ -90,8 +89,6 @@ import CrollBrand from "@/components/ProductDetail/CrollBrand.vue";
 </script>
 <style scoped>
 .container {
-  margin-top: 60px;
-  height: 100px;
 }
 .item {
   border: 1px solid;

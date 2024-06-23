@@ -2,7 +2,7 @@
 import Layout from "@/Layout/Layout.vue";
 </script>
 <template>
-  <Layout>zo day </Layout>
+  <Layout></Layout>
 </template>
 <style scoped>
 .active {
