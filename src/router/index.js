@@ -32,254 +32,254 @@ import Detail from "@/components/ProductDetail/Detail.vue";
 import ContactRight from "@/components/Contact/ContactRight.vue";
 import ContactLeft from "@/components/Contact/ContactLeft.vue";
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: "/Detail",
-      name: "Detail",
-      component: Detail,
-    },
-    {
-      path: "/ContactLeft",
-      name: "ContactLeft",
-      component: ContactLeft,
-    },
-    {
-      path: "/ContactRight",
-      name: "ContactRight",
-      component: ContactRight,
-    },
-    {
-      path: "/login",
-      name: "login",
-      component: Login,
-    },
-    {
-      path: "/About",
-      name: "About",
-      component: About,
-    },
-
-    {
-      path: "/dashboard",
-      name: "dashboard",
-      component: Dashboard,
-    },
-    {
-      path: "/menu",
-      name: "menu",
-      component: MenuHeader,
-    },
-    {
-      path: "/Banner",
-      name: "Banner",
-      component: Banner,
-    },
-    {
-      path: "/BannerIphone",
-      name: "BannerIphone",
-      component: BannerIphone,
-    },
-    {
-      path: "/BannerSamSung",
-      name: "BannerSamSung",
-      component: BannerSamSung,
-    },
-    {
-      path: "/BannerXiaomi",
-      name: "BannerXiaomi",
-      component: BannerXiaomi,
-    },
-    {
-      path: "/BannerOppo",
-      name: "BannerOppo",
-      component: BannerOppo,
-    },
-
-    {
-      path: "/brandpopular",
-      name: "brandpopular",
-      component: BrandPopular,
-    },
-    {
-      path: "/phonepopular",
-      name: "phonepopular",
-      component: PhonePopular,
-    },
-    {
-      path: "/onsale",
-      name: "onsale",
-      component: OnSale,
-    },
-    {
-      path: "/footer",
-      name: "footer",
-      component: Footer,
-    },
-    {
-      path: "/",
-      name: "home",
-      component: Home,
-    },
-    {
-      path: "/signup",
-      name: "signup",
-      component: SignUp,
-    },
-    {
-      path: "/product",
-      name: "product",
-      component: Product,
-    },
-    {
-      path: "/sidebar2",
-      name: "sidebar2",
-      component: Sidebar2,
-    },
-    {
-      path: "/order",
-      name: "order",
-      component: OrderAdmin,
-    },
-    {
-      path: "/customer",
-      name: "customer",
-      component: Customer,
-    },
-    {
-      path: "/deleteProduct",
-      name: "deleteProduct",
-      component: DeleteProduct,
-    },
-    {
-      path: "/deleteCustomer",
-      name: "deleteCustomer",
-      component: DeleteCustomer,
-    },
-    {
-      path: "/FixProduct",
-      name: "FixProduct",
-      component: FixProduct,
-    },
-    {
-      path: "/PlusProduct",
-      name: "PlusProduct",
-      component: PlusProduct,
-    },
-    {
-      path: "/PlusCustomer",
-      name: "PlusCustomer",
-      component: PlusCustomer,
-    },
-    {
-      path: "/FixCustomer",
-      name: "FixCustomer",
-      component: FixCustomer,
-    },
-
-    {
-      path: "/ListProduct",
-      name: "ListProduct",
-      component: ListProduct,
-    },
-    {
-      path: "/CrollBrand",
-      name: "CrollBrand",
-      component: CrollBrand,
-    },
-    {
-      path: "/",
-      name: "home",
-      component: Home,
-    },
-    {
-      path: "/login",
-      name: "login",
-      component: Login,
-    },
-    {
-      path: "/dashboard",
-      name: "dashboard",
-      component: Dashboard,
-    },
-    {
-      path: "/menu",
-      name: "menu",
-      component: MenuHeader,
-    },
-    {
-      path: "/banner",
-      name: "banner",
-      component: Banner,
-    },
-    {
-      path: "/brandpopular",
-      name: "brandpopular",
-      component: BrandPopular,
-    },
-    {
-      path: "/phonepopular",
-      name: "phonepopular",
-      component: PhonePopular,
-    },
-    {
-      path: "/onsale",
-      name: "onsale",
-      component: OnSale,
-    },
-    {
-      path: "/footer",
-      name: "footer",
-      component: Footer,
-    },
-    {
-      path: "/Support",
-      name: "Support",
-      component: Support,
-    },
-    {
-      path: "/Contact",
-      name: "Contact",
-      component: Contact,
-    },
-
-    {
-      path: "/signup",
-      name: "signup",
-      component: SignUp,
-    },
-    {
-      path: "/product",
-      name: "product",
-      component: Product,
-    },
-    {
-      path: "/admin",
-      name: "admin",
-      children: [
+    history: createWebHistory(import.meta.env.BASE_URL),
+    routes: [
         {
-          path: "",
-          name: "adminPanel",
-          component: Sidebar2,
+            path: "/details/:id",
+            name: "Detail",
+            component: Detail,
         },
         {
-          path: "orders",
-          name: "adminOrder",
-          component: OrderAdmin,
+            path: "/ContactLeft",
+            name: "ContactLeft",
+            component: ContactLeft,
         },
         {
-          path: "products",
-          name: "adminProduct",
-          component: Product,
+            path: "/ContactRight",
+            name: "ContactRight",
+            component: ContactRight,
         },
         {
-          path: "customers",
-          name: "adminCustomer",
-          component: Customer,
+            path: "/login",
+            name: "login",
+            component: Login,
         },
-      ],
-    },
-  ],
+        {
+            path: "/About",
+            name: "About",
+            component: About,
+        },
+
+        {
+            path: "/dashboard",
+            name: "dashboard",
+            component: Dashboard,
+        },
+        {
+            path: "/menu",
+            name: "menu",
+            component: MenuHeader,
+        },
+        {
+            path: "/Banner",
+            name: "Banner",
+            component: Banner,
+        },
+        {
+            path: "/BannerIphone",
+            name: "BannerIphone",
+            component: BannerIphone,
+        },
+        {
+            path: "/BannerSamSung",
+            name: "BannerSamSung",
+            component: BannerSamSung,
+        },
+        {
+            path: "/BannerXiaomi",
+            name: "BannerXiaomi",
+            component: BannerXiaomi,
+        },
+        {
+            path: "/BannerOppo",
+            name: "BannerOppo",
+            component: BannerOppo,
+        },
+
+        {
+            path: "/brandpopular",
+            name: "brandpopular",
+            component: BrandPopular,
+        },
+        {
+            path: "/phonepopular",
+            name: "phonepopular",
+            component: PhonePopular,
+        },
+        {
+            path: "/onsale",
+            name: "onsale",
+            component: OnSale,
+        },
+        {
+            path: "/footer",
+            name: "footer",
+            component: Footer,
+        },
+        {
+            path: "/",
+            name: "home",
+            component: Home,
+        },
+        {
+            path: "/signup",
+            name: "signup",
+            component: SignUp,
+        },
+        {
+            path: "/product",
+            name: "product",
+            component: Product,
+        },
+        {
+            path: "/sidebar2",
+            name: "sidebar2",
+            component: Sidebar2,
+        },
+        {
+            path: "/order",
+            name: "order",
+            component: OrderAdmin,
+        },
+        {
+            path: "/customer",
+            name: "customer",
+            component: Customer,
+        },
+        {
+            path: "/deleteProduct",
+            name: "deleteProduct",
+            component: DeleteProduct,
+        },
+        {
+            path: "/deleteCustomer",
+            name: "deleteCustomer",
+            component: DeleteCustomer,
+        },
+        {
+            path: "/FixProduct",
+            name: "FixProduct",
+            component: FixProduct,
+        },
+        {
+            path: "/PlusProduct",
+            name: "PlusProduct",
+            component: PlusProduct,
+        },
+        {
+            path: "/PlusCustomer",
+            name: "PlusCustomer",
+            component: PlusCustomer,
+        },
+        {
+            path: "/FixCustomer",
+            name: "FixCustomer",
+            component: FixCustomer,
+        },
+
+        {
+            path: "/ListProduct",
+            name: "ListProduct",
+            component: ListProduct,
+        },
+        {
+            path: "/CrollBrand",
+            name: "CrollBrand",
+            component: CrollBrand,
+        },
+        {
+            path: "/",
+            name: "home",
+            component: Home,
+        },
+        {
+            path: "/login",
+            name: "login",
+            component: Login,
+        },
+        {
+            path: "/dashboard",
+            name: "dashboard",
+            component: Dashboard,
+        },
+        {
+            path: "/menu",
+            name: "menu",
+            component: MenuHeader,
+        },
+        {
+            path: "/banner",
+            name: "banner",
+            component: Banner,
+        },
+        {
+            path: "/brandpopular",
+            name: "brandpopular",
+            component: BrandPopular,
+        },
+        {
+            path: "/phonepopular",
+            name: "phonepopular",
+            component: PhonePopular,
+        },
+        {
+            path: "/onsale",
+            name: "onsale",
+            component: OnSale,
+        },
+        {
+            path: "/footer",
+            name: "footer",
+            component: Footer,
+        },
+        {
+            path: "/Support",
+            name: "Support",
+            component: Support,
+        },
+        {
+            path: "/Contact",
+            name: "Contact",
+            component: Contact,
+        },
+
+        {
+            path: "/signup",
+            name: "signup",
+            component: SignUp,
+        },
+        {
+            path: "/product",
+            name: "product",
+            component: Product,
+        },
+        {
+            path: "/admin",
+            name: "admin",
+            children: [
+                {
+                    path: "",
+                    name: "adminPanel",
+                    component: Sidebar2,
+                },
+                {
+                    path: "orders",
+                    name: "adminOrder",
+                    component: OrderAdmin,
+                },
+                {
+                    path: "products",
+                    name: "adminProduct",
+                    component: Product,
+                },
+                {
+                    path: "customers",
+                    name: "adminCustomer",
+                    component: Customer,
+                },
+            ],
+        },
+    ],
 });
 
 export default router;
