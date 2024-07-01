@@ -81,7 +81,7 @@ import log from "@/assets/LogoFooter/log.png";
 <style scoped>
 .container-fluid {
   background-color: #424143;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 .footer-logo {
   margin-top: 20px;

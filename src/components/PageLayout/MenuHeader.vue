@@ -1,6 +1,10 @@
 <script setup>
 import logo from "@/assets/logo/logo-Ci.png";
 import "@/assets/main.css";
+
+const toggleLogin = () => {
+  isLoggedIn.value = !isLoggedIn.value;
+};
 </script>
 
 <template>
@@ -11,19 +15,21 @@ import "@/assets/main.css";
       </div>
       <ul class="nav nav-pills mt-1">
         <li class="nav-item">
-          <router-link class="nav-link" to="/">Home </router-link>
+          <router-link class="nav-link" to="/">Trang chủ </router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/about">About </router-link>
+          <router-link class="nav-link" to="/about">Giới thiệu </router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/ListProduct">Product </router-link>
+          <router-link class="nav-link" to="/ListProduct"
+            >Sản phẩm
+          </router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/hotline">Hotline </router-link>
+          <router-link class="nav-link" to="/Support">Hỗ trợ</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/contact">Contact </router-link>
+          <router-link class="nav-link" to="/Contact">Liên hệ </router-link>
         </li>
       </ul>
       <div class="search-bar d-flex justify-content-center mt-1">
@@ -61,7 +67,7 @@ import "@/assets/main.css";
       <div class="dropdown">
         <a
           href="#"
-          class="dropdown-toggle"
+          class="dropdowón-toggle"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
@@ -74,11 +80,17 @@ import "@/assets/main.css";
           />
         </a>
         <ul class="dropdown-menu dropdown-menu-light text-small shadow">
-          <li><a class="dropdown-item" href="#">Đăng Nhập</a></li>
-          <li><a class="dropdown-item" href="#">Đăng Kí</a></li>
-          <li><a class="dropdown-item" href="#"></a></li>
-          <li><hr class="dropdown-divider" /></li>
-          <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+          <li v-if="!toggleLogin">
+            <a class="dropdown-item" href="#">Đăng Nhập</a>
+          </li>
+          <li v-if="!toggleLogin">
+            <router-link
+              ><a class="dropdown-item" href="#">Đăng Kí</a></router-link
+            >
+          </li>
+          <li v-if="toggleLogin">
+            <a class="dropdown-item" href="#">Đăng xuất</a>
+          </li>
         </ul>
       </div>
     </div>

@@ -3,7 +3,7 @@
     <MenuHeader />
     <Banner />
     <CrollBrand />
-    <div class="container">
+    <div class="container product-page">
       <div class="renderList"><h3>DANH SÁCH SẢN PHẨM</h3></div>
       <div class="row d-flex justify-content-center">
         <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
@@ -81,14 +81,17 @@
       </div>
     </div>
   </div>
+  <Footer />
 </template>
 <script setup>
 import Banner from "../PageLayout/Banner.vue";
 import MenuHeader from "../PageLayout/MenuHeader.vue";
 import CrollBrand from "@/components/ProductDetail/CrollBrand.vue";
+import Footer from "@/components/PageLayout/Footer.vue";
 </script>
 <style scoped>
-.container {
+.product-page {
+  margin-top: 70px;
 }
 .item {
   border: 1px solid;

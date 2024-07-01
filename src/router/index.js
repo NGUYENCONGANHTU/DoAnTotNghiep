@@ -15,6 +15,9 @@ import PhonePopular from "@/components/PageLayout/PhonePopular.vue";
 import OnSale from "@/components/PageLayout/OnSale.vue";
 import Footer from "@/components/PageLayout/Footer.vue";
 import Home from "../views/Home.vue";
+import Support from "../views/Support.vue";
+import About from "../views/About.vue";
+import Contact from "../views/Contact.vue";
 import Sidebar2 from "@/components/Admin/Sidebar2.vue";
 import Customer from "../views/Customer.vue";
 import DeleteProduct from "@/components/EditProduct/DeleteProduct.vue";
@@ -25,14 +28,38 @@ import PlusProduct from "@/components/EditProduct/PlusProduct.vue";
 import PlusCustomer from "@/components/EditCustomer/PlusCustomer.vue";
 import ListProduct from "@/components/ProductDetail/ListProduct.vue";
 import CrollBrand from "@/components/ProductDetail/CrollBrand.vue";
+import Detail from "@/components/ProductDetail/Detail.vue";
+import ContactRight from "@/components/Contact/ContactRight.vue";
+import ContactLeft from "@/components/Contact/ContactLeft.vue";
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path: "/Detail",
+      name: "Detail",
+      component: Detail,
+    },
+    {
+      path: "/ContactLeft",
+      name: "ContactLeft",
+      component: ContactLeft,
+    },
+    {
+      path: "/ContactRight",
+      name: "ContactRight",
+      component: ContactRight,
+    },
     {
       path: "/login",
       name: "login",
       component: Login,
     },
+    {
+      path: "/About",
+      name: "About",
+      component: About,
+    },
+
     {
       path: "/dashboard",
       name: "dashboard",
@@ -204,6 +231,16 @@ const router = createRouter({
       path: "/footer",
       name: "footer",
       component: Footer,
+    },
+    {
+      path: "/Support",
+      name: "Support",
+      component: Support,
+    },
+    {
+      path: "/Contact",
+      name: "Contact",
+      component: Contact,
     },
 
     {

@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/vue-fontawesome": "^3.0.8",
     "@vueuse/core": "^10.10.0",
     "bootstrap": "^5.3.3",
     "firebase": "^10.12.2",
