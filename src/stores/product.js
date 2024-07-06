@@ -3,9 +3,19 @@ import { ref } from "vue";
 
 export const useProductStore = defineStore("product", () => {
     const productsStore = ref([]);
-
+    const searchResult = ref([]);
     function storeProduct(data) {
         productsStore.value = data;
+    }
+
+    function searchProduct(search) {
+        searchResult.value = [];
+        const tempProducts = productsStore.value.filter((product) =>
+            product.name.toLowerCase().includes(search.toLowerCase())
+        );
+
+        console.log(tempProducts);
+        searchResult.value = tempProducts;
     }
 
     function sortProduct(products, sort) {
@@ -32,7 +42,7 @@ export const useProductStore = defineStore("product", () => {
         productsStore.value = tempProducts;
         return productsStore.value;
     }
-    return { productsStore, storeProduct, sortProduct };
+    return { productsStore, storeProduct, sortProduct, searchProduct, searchResult };
 });
 
 if (import.meta.hot) {

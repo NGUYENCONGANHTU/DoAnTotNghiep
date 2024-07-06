@@ -93,7 +93,6 @@ onMounted(async () => {
     loading.value = true;
     const docRef = doc(db, "products", id);
     const docSnap = await getDoc(docRef);
-
     if (docSnap.exists()) {
         product.value = docSnap.data();
     } else {
